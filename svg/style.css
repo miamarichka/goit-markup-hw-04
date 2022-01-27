@@ -15,34 +15,26 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.customer1 {
-  width: 0.9423828125em;
+.logo-5 {
+  width: 1.7666015625em;
 }
 
-.customer2 {
-  width: 0.8720703125em;
+.logo-4 {
+  width: 1.7666015625em;
 }
 
-.customer3 {
-  width: 0.76953125em;
+.logo-3 {
+  width: 1.7666015625em;
 }
 
-.customer4 {
-  width: 1.0712890625em;
+.logo-2 {
+  width: 1.7666015625em;
 }
 
-.customer5 {
-  width: 2.0234375em;
+.logo-1 {
+  width: 1.7666015625em;
 }
 
-.customer6 {
-  width: 1.3408203125em;
-}
-
-.envelope {
-  width: 1.3330078125em;
-}
-
-.smartphone {
-  width: 0.625em;
+.logo {
+  width: 1.7666015625em;
 }
