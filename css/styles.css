@@ -130,6 +130,8 @@ img{
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   color: var(--additional-text-color);
   text-decoration: none;
 }
@@ -141,7 +143,6 @@ img{
 
 .contacts-icon{
   margin-right: 10px;
-  vertical-align: middle;
   fill: currentColor;
 }
 
@@ -159,6 +160,8 @@ background-color: var(--additional-background-color);
 section.hero{
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -318,6 +321,8 @@ border-radius: 0px 0px 4px 4px;
 .social-icon-item+.social-icon-item{
   margin-left: 10px;
 }
+
+.social-link:focus,
 .social-link:hover{
   background-color: var(--button-color);
   border-radius: 50%;
@@ -329,12 +334,13 @@ border-radius: 0px 0px 4px 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
 }
 
 .social-icon{
   fill: #AFB1B8;
 }
+
+.social-link:focus .social-icon,
 .social-link:hover .social-icon{
   fill: var(--background-color);
 }
@@ -361,6 +367,7 @@ border-radius: 0px 0px 4px 4px;
   color: #AFB1B8;
 }
 
+.client-link:focus,
 .client-link:hover{
   color: var(--button-color);
   border-color: var(--button-color);
@@ -385,7 +392,6 @@ border-radius: 0px 0px 4px 4px;
 
 .footer-logo {
   margin-bottom: 20px;
-  margin-right: 156px;
 }
 .footer-text{
   font-weight: 700;
@@ -394,16 +400,7 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
-  padding-bottom: 20px;
-}
-.block-logo{
-  display: flex;
-  align-items: center;
-}
-
-
-.address-list{
-  margin-right: 70px;
+  margin-bottom: 20px;
 }
 
 .location,
@@ -442,8 +439,8 @@ border-radius: 0px 0px 4px 4px;
   color: var(--button-color);
 }
 
-.footer-contacts{
-  display: flex;
+.block-address{
+  margin-right: 70px;
 }
 
 .footer-social-link{
@@ -488,6 +485,11 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 4px;
   border-color: transparent;
 }
+.filter-link{
+  display: block;
+  padding: 6px 22px;
+}
+
 .filter-link:hover,
 .filter-link:focus {
   background-color: var(--button-color);
@@ -545,7 +547,10 @@ border-radius: 0px 0px 4px 4px;
   flex-wrap: wrap;
 }
 
-.projects-item:hover,
-.projects-item:focus{
+.project-link{
+  display: block;
+}
+.project-link:hover,
+.project-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
