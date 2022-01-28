@@ -133,19 +133,18 @@ img{
   color: var(--additional-text-color);
   text-decoration: none;
 }
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--button-color);
 }
+
 .contacts-icon{
   margin-right: 10px;
   vertical-align: middle;
-  fill: var(--additional-text-color);
-}
-.contacts-icon:hover,
-.contacts-icon:focus{
   fill: currentColor;
 }
+
 
 
 /*hero*/
@@ -234,9 +233,6 @@ section.hero{
   letter-spacing: 0.03em;
 }
 
-.advantage-icon{
-
-}
 
 .advantage-block-icon{
   background-color: #F5F4FA;
@@ -317,6 +313,7 @@ border-radius: 0px 0px 4px 4px;
 .social-icon-list{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .social-icon-item+.social-icon-item{
   margin-left: 10px;
@@ -325,16 +322,53 @@ border-radius: 0px 0px 4px 4px;
   background-color: var(--button-color);
   border-radius: 50%;
 }
+
 .social-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px;
 }
-.social-icon:hover{
+
+.social-icon{
+  fill: #AFB1B8;
+}
+.social-link:hover .social-icon{
   fill: var(--background-color);
 }
 
+/*clients*/
 
+.client-list{
+  display: flex;
+}
 
+.client-item+ .client-item{
+  margin-left: 30px;
+}
 
+.client-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+
+.client-link:hover{
+  color: var(--button-color);
+  border-color: var(--button-color);
+}
+
+.client-icon{
+  fill: currentColor;
+}
 
 /*footer*/
 
@@ -345,8 +379,31 @@ border-radius: 0px 0px 4px 4px;
   padding-bottom: 60px;
 }
 
+.footer-container{
+  display: flex;
+}
+
 .footer-logo {
   margin-bottom: 20px;
+  margin-right: 156px;
+}
+.footer-text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  padding-bottom: 20px;
+}
+.block-logo{
+  display: flex;
+  align-items: center;
+}
+
+
+.address-list{
+  margin-right: 70px;
 }
 
 .location,
@@ -384,6 +441,22 @@ border-radius: 0px 0px 4px 4px;
 .mail:hover {
   color: var(--button-color);
 }
+
+.footer-contacts{
+  display: flex;
+}
+
+.footer-social-link{
+  background-color:rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-icon{
+  fill: var(--title-color)
+}
+
+
+
 
 /*portfolio*/
 
