@@ -158,7 +158,7 @@ background-color: var(--additional-background-color);
 
 section.hero{
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(/css/background.jpg);
+  url(/background.jpg);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
